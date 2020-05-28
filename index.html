@@ -9,9 +9,60 @@
         <link rel="stylesheet" href="./style.css">
         <title>Hello Paint Pro</title>
     </head>
+<nav>
+    <h1> Hello Paint Pro </h1>
+</nav>
     <body>
-        <canvas id="canvas"></canvas>
-        
-        <script src="canvas.js" async defer></script>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut error, provident beatae natus illum, in veniam iusto perspiciatis dolorem sequi? Quidem adipisci unde rerum quos accusantium perspiciatis, alias beatae!
+
+</p>
+        <div class="toolbox left">
+            <div class="group commands">
+                <div class="item" data-command="undo" title="Undo">
+                   <img src="images/undobutton.png"/> 
+                </div>
+            </div>
+                <div class="item" data-command="download" title="Download">
+                    <img src="images/downloadicon.png"/> 
+                    </div>
+            <div class="group shapes">
+                <div class="item active" data-tool="line" title="Line Tool">
+                    <img src="images/lineicon.png">
+                </div>
+                <div class="item active" data-tool="rectangle" title="Rectangle Tool">
+                    <img src="images/rectangleicon2.png">
+                </div>
+                <div class="item active" data-tool="circle" title="Circle Tool">
+                    <img src="images/circleicon2.png">
+                </div>
+                <div class="item active" data-tool="triangle" title="Triangle Tool">
+                    <img src="images/triangleicon.png">
+                </div>
+            </div>
+            <div class="group tools">
+                <div class="item" data-tool="pencil" title="Pencil">
+                    <img src="images/icons8-pencil-drawing-48.png">
+                </div>
+                <div class="item" data-tool="brush" title="Brush">
+                    <img src="images/paintbrushicon.png">
+                </div>
+                <div class="item" data-tool="paint-bucket" title="Paint-bucket Tool">
+                    <img src="images/paintbucketicon.png">
+                </div>
+
+                <div class="item" data-tool="eraser" title="Eraser Tool">
+                     <img src="images/erasericon.png">
+                </div>
+
+            </div>
+        </div>
+
+            <canvas id="canvas" width="640" height="480"></canvas>
+
+        <div class="toolbox right">
+            <div class='group swatches'>
+                
+            </div>
+        </div>
     </body>
 </html>

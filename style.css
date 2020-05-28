@@ -1,11 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    margin:0px;
+    background-color: rgb(121, 37, 93);
+}
+
+.toolbox{
+    height:100vh;
+    position: absolute;
+    background-color: rgb(63, 1, 58);
+  
+}
+
+.toolbox .group .item{
+    width: 24px;
+    height:24px;
+    padding: 10px;
+    cursor: pointer;
 
 }
 
-#canvas {
-    border: 2px solid blue;
+.toolbox .group .item img{
+    width:100%;
     
+}
+
+.toolbox.left{
+    left:0px;
+    top:0px;
+}
+
+.toolbox.right{
+    right:0px;
+    top:0px;
+}
+
+#canvas{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
 }
